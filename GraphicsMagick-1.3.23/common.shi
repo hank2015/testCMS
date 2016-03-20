@@ -1,0 +1,18 @@
+# -*- shell-script -*-
+# Copyright (C) 2012 GraphicsMagick Group
+# Definitions of optional features and configuration values for this build.
+# Intended for use by test scripts.
+MAGICK_FEATURES='PNG PS TTF X ZLIB'
+top_srcdir='/home/softbak/GraphicsMagick-1.3.23'
+top_builddir='/home/softbak/GraphicsMagick-1.3.23'
+
+set -a
+GM="${MEMCHECK} /home/softbak/GraphicsMagick-1.3.23/utilities/gm"
+LD_LIBRARY_PATH="/home/softbak/GraphicsMagick-1.3.23/magick/.libs:${LD_LIBRARY_PATH}"
+
+MAGICK_CODER_MODULE_PATH='/home/softbak/GraphicsMagick-1.3.23/coders'
+MAGICK_CONFIGURE_PATH='/home/softbak/GraphicsMagick-1.3.23/config:/home/softbak/GraphicsMagick-1.3.23/config'
+MAGICK_FILTER_MODULE_PATH='/home/softbak/GraphicsMagick-1.3.23/filters'
+
+PATH="/home/softbak/GraphicsMagick-1.3.23/utilities:${PATH}"
+set +a
